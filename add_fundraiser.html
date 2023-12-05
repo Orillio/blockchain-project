@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Fundraiser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Add fundraiser</h1>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="add_fundraiser.html">Add Fundraiser</a>
+    </nav>
+    <br>
+    <form id="addFundraiserForm">
+        <label for="goal">Goal (ETH):</label>
+        <input type="number" id="goal" name="goal" step=any required>
+
+        <label for="deadline">Deadline:</label>
+        <input type="datetime-local" id="deadline" name="deadline" required>
+
+        <button type="button" onclick="addFundraiser()">Create Fundraiser</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
